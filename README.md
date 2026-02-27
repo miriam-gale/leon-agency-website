@@ -18,7 +18,7 @@ https://profound-gingersnap-6a8432.netlify.app/
 ## 🛠️ Built With
 
 - HTML
-- CSS3
+- CSS
 - Google Fonts
 - Font Awesome Icons
 
