@@ -490,7 +490,31 @@ img{
   border-bottom: none;
 }
  
+@media (max-width: 768px) {
+  .service-section .services-layout {
+    grid-template-columns: 1fr;
+  }
 
+  .service-section .service-image {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section .about-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 40px;
+  }
+
+  .about-text {
+    margin-top: 0;
+  }
+}
 
 
 
