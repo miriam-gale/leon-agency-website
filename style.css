@@ -19,9 +19,12 @@ body {
   margin: 0;
 }
 
-.container{
-  padding-left:15px;
-  padding-right:15px;
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
 
 .header{
@@ -48,6 +51,10 @@ body {
   margin-bottom: 5px;
   width: 100%;
   height: 2px;
+}
+
+.header .links ul li a:hover {
+  transform: translateX(10px);
 }
 
 .header .links .icons span:nth-child(2){
@@ -102,17 +109,21 @@ body {
 .features .container{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
+  gap: 20px;
+  justify-items: center;
 }
 
-.features .feature{
+.features .feature {
   text-align: center;
   padding: 40px;
+  margin: auto;
+  max-width: 320px;
 }
 
 .features .container .feature h3{
   margin: 30px 0;
   font-weight: 800;
+  text-align: center;
 
 }
 
@@ -121,6 +132,10 @@ body {
   line-height: 1.8;
   font-size: 18px;
   color: rgb(115, 115, 115);
+   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
 }
 
 
@@ -354,7 +369,7 @@ img{
     line-height: 2;
     margin-bottom: 15px;
     font-size: 18px;
-    padding-right: px;
+    padding-right: 20px;
 }
 
 .about-text{
@@ -426,6 +441,26 @@ img{
 .contact-section .contact-info .social-media i{
     margin-left: 10px;
     color: #2c4755;
+    font-size: 20px;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.contact-section .contact-info .social-media i:hover{
+  transform: scale(1.25) translateY(-3px);
+  filter: brightness(1.3);
+}
+
+.contact-section .social-media .fa-youtube:hover{
+  color: #ff0000;
+}
+
+.contact-section .social-media .fa-facebook-f:hover{
+  color: #1877F2;
+}
+
+.contact-section .social-media .fa-twitter:hover{
+  color: #1DA1F2;
 }
 
 .footer {
@@ -451,7 +486,7 @@ img{
   padding: 10px 0;
   position: absolute;
   right: 0;
-  top: calc(100% + 15px); 
+  top: 100%;
   background-color: #f6f6f6;
   min-width: 200px;
   display: none;
@@ -514,6 +549,18 @@ img{
   }
 }
 
+
+@media (max-width: 992px) {
+  .features .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .features .container {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
