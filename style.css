@@ -186,6 +186,7 @@ body {
 
 .service-section .service-image {
   position: relative;
+  text-align: center;
 }
 
 .service-section .service-image::before {
@@ -200,8 +201,7 @@ body {
 }
 
 .service-section .service-image img {
-  width: 100%;
-  display: block;
+  width: 260px;
 }
 
 .portfolio-section{
@@ -438,7 +438,7 @@ img{
 
 .footer span {
     font-weight: bold;
-    color: #10cab7;
+    
 }
 
 .header .container .links{
@@ -498,9 +498,7 @@ img{
   .service-section .service-image {
     margin-top: 40px;
   }
-}
 
-@media (max-width: 768px) {
   .about-section .about-info {
     flex-direction: column;
     align-items: center;
