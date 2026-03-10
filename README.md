@@ -9,8 +9,8 @@ This project was built as a hands-on practice to strengthen core front-end skill
 
 ## 🔗 Live Demo
 
-👉 **Netlify Link:**  
-https://profound-gingersnap-6a8432.netlify.app/
+👉 **Github pages**  
+https://miriam-gale.github.io/leon-agency-website/
 
 ---
 
